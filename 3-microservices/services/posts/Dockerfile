@@ -1,8 +1,8 @@
-FROM mhart/alpine-node:7.10.1
+FROM mhart/alpine-node:8
 
 WORKDIR /srv
 ADD . .
-RUN npm install
+RUN yarn install
 
 EXPOSE 3000
 CMD ["node", "server.js"]
